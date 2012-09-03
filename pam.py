@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 
 from os import environ, setresuid
 from pwd import getpwnam as getuid
