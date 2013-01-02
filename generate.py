@@ -67,7 +67,8 @@ if myFile is not None:
   handle = open(os.path.expanduser(myFile), 'w')
   yaml.dump(myConf, handle)
   print(myConf['url'])
-  print(myConf['scratch'])
+  if 'scratch' in myConf:
+    print(myConf['scratch'])
 else:
   print(yaml.dump(myConf))
 
