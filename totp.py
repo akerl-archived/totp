@@ -45,7 +45,7 @@ class Config:
       Code = unpack('>L', ShortHash)[0]
       Code &= 0x7FFFFFFF
       Code %= 1000000
-      Code = "%06d" % Code
+      Code = '{0:06d}'.format(Code)
       self.keys.append(Code)
 
   def authenticate(self, Code):
