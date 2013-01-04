@@ -57,7 +57,7 @@ if doScratch:
   myConf['scratch'] = []
   for x in range(0,doScratch):
     myConf['scratch'].append(str(base64.b32encode(os.urandom(6))[0:10], 'ascii'))
-myConf['url'] = "https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/{0}@{1}%3Fsecret%3D{2}".format(os.environ['USER'], os.uname()[1], myConf['secret'])
+myConf['url'] = "https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=otpauth://totp/{0}@{1}%3Fsecret%3D{2}".format(os.environ['USER'], os.uname()[1], myConf['secret'])
 
 if myFile is not None:
   if not os.path.exists(os.path.expanduser(myFile)):
