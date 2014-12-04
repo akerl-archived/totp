@@ -1,3 +1,5 @@
+**Inactive Project:** I no longer use this, in favor of adjusting my workflow and using [the google-authenticator PAM project](https://github.com/akerl/google-authenticator)
+
 totp
 =========
 
