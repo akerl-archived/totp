@@ -3,6 +3,8 @@
 totp
 =========
 
+[![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://tldrlegal.com/license/mit-license)
+
 This module implements RFC 6238, TOTP authentication.
 
 ## Usage
